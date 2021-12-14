@@ -67,6 +67,7 @@ h3:before {
 /* - -- --- .PROJECT STYLES --- -- - */
 .project {
     width: 100%;
+    margin-top: 4em;
     
     display: grid;
     grid-template-columns: 1fr;
@@ -151,7 +152,7 @@ h3:before {
 }
 .gall-grid img {
     width: 100%;
-    cursor: pointer;
+    /*cursor: pointer;*/
 }
 .gall-grid img:hover {
     outline: 0.15rem solid #f00;
@@ -161,7 +162,7 @@ h3:before {
 .sketch {
     position: relative;
     height: 70vh;
-    width: 100vw; 
+    width: 100%; 
 }
 .overlay {
     position: absolute;
