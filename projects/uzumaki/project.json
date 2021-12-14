@@ -1,0 +1,94 @@
+{
+    "title": "Uzumaki",
+    "subtitle": "A study of polar functions in 3d",
+    "date": "November 2019",
+    "bgColor": "#000",
+    "fgColor": "#fff",
+    "spColor": "#f00",
+    "controls": [
+        {
+            "type": "keyboard",
+            "input": "[Space]",
+            "function": "[spawn] ellipse",
+            "alt-function": "[RED] ellipse"
+        },
+        {
+            "type": "keyboard",
+            "input": "[S] [s]",
+            "function": "[size] change",
+            "alt-function": "[sepia]"
+        },
+        {
+            "type": "keyboard",
+            "input": "[H] [h]",
+            "function": "[hide] overlay",
+            "alt-function": "[hyperion]"
+        },
+        {
+            "type": "keyboard",
+            "input": "[I] [i]",
+            "function": "[invert] colors",
+            "alt-function": "[indigo]"
+        },
+        {
+            "type": "keyboard",
+            "input": "[F] [f]",
+            "function": "[follow] mode",
+            "alt-function": "[fall]"
+        },
+        {
+            "type": "keyboard",
+            "input": "[T] [t]",
+            "function": "[trace] frames",
+            "alt-function": "[techno]"
+        },
+        {
+            "type": "mouse",
+            "input": "[MousePos]",
+            "function": "[speed] control"
+        },
+        {
+            "type": "mouse",
+            "input": "[MouseClick]",
+            "function": "[play] / pause"
+        }
+    ],
+    "gallery": [
+        {
+            "alt": "Space",
+            "url": "_space.png"
+        },
+        {
+            "alt": "Spiral",
+            "url": "_spiral.png"
+        },
+        {
+            "alt": "Spartan",
+            "url": "_spartan.png"
+        },
+        {
+            "alt": "Sploosh",
+            "url": "_sploosh.png"
+        },
+        {
+            "alt": "Sausage",
+            "url": "_sausage.png"
+        },
+        {
+            "alt": "Skip",
+            "url": "_skip.png"
+        },
+        {
+            "alt": "Steel",
+            "url": "_steel.png"
+        },
+        {
+            "alt": "Stone",
+            "url": "_stone.png"
+        },
+        {
+            "alt": "Speed",
+            "url": "_speed.png"
+        }
+    ]
+}

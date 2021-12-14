@@ -1,0 +1,206 @@
+/* TODO: write js that changes site color dynamically (depending on highlighted project) */
+/* - -- --- GLOBAL STYLES --- -- - */
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* - -- --- TAG STYLES --- -- - */
+h1 {
+    font-size: 3em;
+    
+    padding: 1em;
+}
+h2 {
+    font-size: 2em;
+}
+h3 {
+    font-size: 1.5em;
+    
+    margin-bottom: 1em;
+    margin-top: 1em;
+    
+    overflow: hidden;
+    white-space: nowrap;
+}
+p {
+    font-size: 1em;
+}
+body {
+    height: 100%;
+    
+    font-size: 16px;
+    font-family: monospace;
+    
+    color: #fff;
+    background-color: #000;
+}
+* {
+    /* Disable text selectability */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+}
+
+/* - -- --- TITLE FLAIR --- -- - */
+h3:after, h3:before {
+    position: relative;
+    top: -0.25rem;
+    
+    font-size: 0.5rem;
+}
+h3:after {
+    content: " --- -- -";
+}
+h3:before {
+    content: "- -- --- "
+}
+
+/* - -- --- .PROJECT STYLES --- -- - */
+.project {
+    width: 100%;
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "head"
+                         "desc"
+                         "demo"
+                         "ctrl"
+                         "gall";
+}
+.project-header {
+    grid-area: head;
+    z-index: 1;
+    
+    position: -webkit-sticky;
+    position: sticky;
+    top: 2em;
+}
+.project-header h2 {
+    position: relative;
+    top: -50%;
+    
+    box-sizing: border-box;
+    border: 0.15rem solid;
+    
+    padding: 0.2rem 0.6rem;
+    min-width: min-content;
+    max-width: 40%;
+    margin: 0 auto;
+    
+    background-color: #000;
+}
+.project-description {
+    grid-area: desc;
+}
+.project-description p {
+    position: relative;
+    top: -50%;
+}
+.project-controls {
+    grid-area: ctrl;
+    margin: 0 auto;
+}
+.project-demo {
+    grid-area: demo;
+}
+.project-gallery {
+    grid-area: gall;
+}
+
+/* - -- --- .CTRL-GRID STYLES --- -- - */
+.ctrl-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "keyboard" 
+                         "mouse";
+}
+.ctrl-grid div {
+    display: flex;
+    flex-direction: column;
+    
+    margin: 0 1em 1em;
+}
+.ctrl-grid div p {
+    text-align: left;
+    line-height: 2;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.keyboard {
+    grid-area: keyboard;
+}
+.mouse {
+    grid-area: mouse;
+}
+
+/* - -- --- .GALL-GRID STYLES --- -- - */
+.gall-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0.5em;
+    margin: 0.5em;
+}
+.gall-grid img {
+    width: 100%;
+    cursor: pointer;
+}
+.gall-grid img:hover {
+    outline: 0.15rem solid #f00;
+}
+
+/* - -- --- .P5 STYLES --- -- -*/
+.sketch {
+    position: relative;
+    height: 70vh;
+    width: 100vw; 
+}
+.overlay {
+    position: absolute;
+    
+    width: 100%;
+    top: 20%;
+    
+    font-size: 1em;
+    padding: 0.35em 0.15em;
+    vertical-align: middle;
+    
+    border-top: 0.15rem solid #f00;
+    border-bottom: 0.15rem solid #f00;
+    box-sizing: border-box;
+    
+    background-color: #000;
+}
+.button-fullscreen {
+    height: 2em;
+    width: 100%;
+    
+    margin-top: 0.2em;
+    
+    box-sizing: border-box;
+    border: none;
+    
+    cursor: pointer;
+    
+    font-size: 1em;
+    font-family: monospace;
+    
+    color: inherit;
+    background-color: inherit;
+}
+.button-fullscreen:hover {
+    color: #f00;
+}
+
+/* - -- --- SPOT COLOR --- -- - */
+.spot {
+    color: #f00;
+}
